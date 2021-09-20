@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:flutter_testing_new_template/src/general/general_ui_model.dart';
+import 'package:flutter_testing_new_template/src/general/base_ui_model.dart';
 import 'package:flutter_testing_new_template/src/sample_feature/posts_list_store.dart';
 import 'package:flutter_testing_new_template/src/services/post_service.dart';
 
@@ -49,7 +49,7 @@ class _PostsListViewState extends State<PostsListView> {
               return Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'SampleItem ${store.postItem[index].data!.title}',
+                  'SampleItem ${store.postItem[index].data.title}',
                 ),
               );
             },

@@ -1,8 +1,8 @@
-import 'package:flutter_testing_new_template/src/general/general_ui_model.dart';
+import 'package:flutter_testing_new_template/src/general/base_ui_model.dart';
 
 part '../model/post_item.part.dart';
 
-class PostItem extends GeneralModel<_PostItem> {
+class PostItem extends BaseUiModel<_PostItem> {
   PostItem({
     required String title,
     required int id,
