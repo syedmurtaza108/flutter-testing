@@ -19,8 +19,10 @@ pipeline {
         }
         stage('Release') {
             steps {
-                echo 'Releasing'
-            }
+         sh '''#!/bin/bash
+               flutter build apk --debug 
+         '''
+    }
         }
     }
 }
