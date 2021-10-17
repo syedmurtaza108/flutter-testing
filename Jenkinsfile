@@ -1,5 +1,8 @@
 pipeline {
     agent { label 'master' }
+    tools {
+        gradle 'gradle'
+    }
     stages {
 
         stage ('TEST BUILD AND DEPLOYMENT') {
